@@ -4,7 +4,8 @@ import {HomeIcon} from "@heroicons/react/solid"
 
 function Header() {
     return (
-        <div className='flex justify-between max-w-4xl mx-5 xl:mx-auto'>
+        <div className='shadow-sm border-b sticky top-0 z-50'>
+            <div className='flex justify-between max-w-4xl mx-5 xl:mx-auto'>
            {/* Header Left */}
                 <div className='relative hidden lg:inline-grid  w-24 cursor-pointer '>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png"
@@ -31,13 +32,15 @@ function Header() {
            <div className="items-center flex justify-end space-x-4">
                <HomeIcon className='headerbtn' />
                <MenuIcon className='h-6 md:hidden cursor-pointer flex-shrink-0'/>
-               <PaperAirplaneIcon className='headerbtn' />
+               <PaperAirplaneIcon className='headerbtn rotate-45' />
                <PlusCircleIcon className='headerbtn'/>
                <UserGroupIcon className='headerbtn'/>
                <HeartIcon className='headerbtn'/>
                 <img src="https://yt3.ggpht.com/yti/APfAmoE_KFUTP635S10XQ06Hl03euB2pKI6NyNOPqDzTEA=s108-c-k-c0x00ffffff-no-rj" alt="profile pic" className='h-8 md:h-10 rounded-full' />
            </div>
         </div>
+        </div>
+        
     )
 }
 
